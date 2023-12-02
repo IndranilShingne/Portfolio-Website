@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import "./App.css"
 let Functional=({ toggleMenu })=>{
     return(
         <div className="container">
@@ -30,7 +31,7 @@ let Functional=({ toggleMenu })=>{
         <ul>
         <li><Link to="/" style={{ '--i': '0.05s' }}>Home</Link></li>
         <li><Link to="/my-profiles" style={{ '--i': '0.10s' }}>My Profiles</Link></li>
-        <li><a href="https://github.com/IndranilShingne/resume/blob/main/INDRANIL_GANESH_SHINGNE_RESUME.pdf" target='_blank' style={{ '--i': '0.15s' }}>Download my resume</a></li>
+        <li><a href="https://github.com/IndranilShingne/resume/blob/main/INDRANIL_GANESH_SHINGNE_RESUME.pdf"  style={{ '--i': '0.15s' }}>Download my resume</a></li>
         <li><Link to="/contact-me" style={{ '--i': '0.20s' }}>Contact Me</Link></li>
         </ul>
         </div>

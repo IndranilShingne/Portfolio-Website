@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import "./AppTwo.css"
 let Profiles=()=>{
     return(
         <>
@@ -13,10 +14,10 @@ let Profiles=()=>{
     <hr/>
     <div className='links2'>
     <ul>
-    <li><a href="https://github.com/IndranilShingne" target="_blank">Git-hub</a></li>
-    <li><a href="https://www.hackerrank.com/shingnenil" target="_blank">Hacker-rank</a></li>
-    <li><a href="https:/linkedin.com/in/indranil-shingne" target="_blank">Linked-in</a></li>
-    <li><a href="https://leetcode.com/Indranil-Shingne/" target="_blank">Leet-code</a></li>
+    <li><a href="https://github.com/IndranilShingne" >Git-hub</a></li>
+    <li><a href="https://www.hackerrank.com/shingnenil" >Hacker-rank</a></li>
+    <li><a href="https:/linkedin.com/in/indranil-shingne" >Linked-in</a></li>
+    <li><a href="https://leetcode.com/Indranil-Shingne/" >Leet-code</a></li>
     </ul>
     </div>
   </div>

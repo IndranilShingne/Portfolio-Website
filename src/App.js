@@ -1,11 +1,9 @@
 import React, { useState } from 'react';
-import { BrowserRouter as Router, Routes, Route,Link} from 'react-router-dom'; // Import 'Routes'
-import './App.css';
-import './AppTwo.css';
-import './ContactMe.css'
-import Arrow from './component/MainPage.jsx';
-import Profiles from './component/Profiles.jsx';
-import ContactMe from './component/ContactMe.jsx';
+import { BrowserRouter as Router, Routes, Route,HashRouter} from 'react-router-dom'; // Import 'Routes'
+import Arrow from './MainPage.jsx';
+import Profiles from './Profiles.jsx';
+import ContactMe from './ContactMe.jsx';
+
 
 const App = () => {
   const [isActive, setIsActive] = useState(false);
@@ -15,7 +13,7 @@ const App = () => {
   };
 
   return (
-    <Router>
+    <HashRouter>
     <div className={`container ${isActive ? 'active' : ''}`}>
       <Routes>
         <Route path="/" element={<Arrow toggleMenu={toggleMenu} />} />
@@ -23,7 +21,7 @@ const App = () => {
         <Route path="/contact-me" element={<ContactMe/>} />
       </Routes>
     </div>
-  </Router>
+  </HashRouter>
   );
 };
 
